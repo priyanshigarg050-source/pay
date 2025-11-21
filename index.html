@@ -2,10 +2,29 @@
 <html>
 <head>
 <meta charset="UTF-8" />
-<title>Redirecting…</title>
+<title>Payment Redirect</title>
 </head>
-<body onload="window.location.href='upi://pay?pa=vyapar.171899954970@hdfcbank&pn=MeditationWorkshop&am=100&tn=MeditationWorkshop';">
+<body style="font-family: Arial; padding: 40px; text-align: center;">
+
+<h2>Opening payment…</h2>
+<p>If not redirected automatically, tap below:</p>
+
+<a 
+   href="upi://pay?pa=vyapar.171899954970@hdfcbank&pn=MeditationWorkshop&am=100&tn=MeditationWorkshop"
+   style="display:inline-block; padding:12px 20px; background:#007bff; color:white; 
+          border-radius:8px; text-decoration:none; font-size:16px;">
+   Pay Now
+</a>
+
+<script>
+    setTimeout(() => {
+        window.location.href = 
+          'upi://pay?pa=vyapar.171899954970@hdfcbank&pn=MeditationWorkshop&am=100&tn=MeditationWorkshop';
+    }, 800);
+</script>
+
 </body>
 </html>
+
 
 
